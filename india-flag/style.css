@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+section{
+    min-height: 100vh;
+    width: 100%;
+    background-color:black;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+.container{
+    width: 700px;
+    position: relative;
+    height: 350px;
+    display: flex;
+    
+   
+}
+h1{
+    width: 100%;
+    height: 60px;
+    background: rgb(255,153,51);
+    font-size: 40px;
+    background: linear-gradient(45deg, rgba(255,153,51,1) 30%,
+     rgba(239,239,239,1) 48%, rgba(19,136,8,1) 94%);
+    position: absolute;
+    text-align: center;
+    top: 0;
+    left: 0;
+}
+.block{
+    width: 7vw;
+    height: 100%;
+    background:url(flag.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    transition: .5s;
+    animation: margin 2s linear infinite;
+    border-radius: 4px;
+}
+@keyframes margin {
+    50%{
+        margin-top: -30px;
+    }
+}

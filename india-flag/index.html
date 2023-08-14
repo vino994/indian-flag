@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>India-Flag</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <h1>Advance Happy Independence day</h1>
+        <div class="container">
+            <div class="block"></div>
+        </div>
+    </section>
+    <script>
+        var container = document.getElementsByClassName('container')[0];
+        
+        var block = document.getElementsByClassName('block');
+        for(var i=1;i<15;i++){
+            
+            container.innerHTML += "<div class='block'></div>"
+            block[i].style.animationDelay = `${i * 0.1}s`
+        }
+    </script>
+</body>
+</html>
